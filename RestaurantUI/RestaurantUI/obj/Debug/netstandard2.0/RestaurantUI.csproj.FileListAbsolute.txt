@@ -1,0 +1,15 @@
+C:\Users\Bruker\Desktop\xamarin\RestaurantUI\RestaurantUI\RestaurantUI\bin\Debug\netstandard2.0\RestaurantUI.deps.json
+C:\Users\Bruker\Desktop\xamarin\RestaurantUI\RestaurantUI\RestaurantUI\bin\Debug\netstandard2.0\RestaurantUI.dll
+C:\Users\Bruker\Desktop\xamarin\RestaurantUI\RestaurantUI\RestaurantUI\bin\Debug\netstandard2.0\ref\RestaurantUI.dll
+C:\Users\Bruker\Desktop\xamarin\RestaurantUI\RestaurantUI\RestaurantUI\bin\Debug\netstandard2.0\RestaurantUI.pdb
+C:\Users\Bruker\Desktop\xamarin\RestaurantUI\RestaurantUI\RestaurantUI\obj\Debug\netstandard2.0\RestaurantUI.csproj.AssemblyReference.cache
+C:\Users\Bruker\Desktop\xamarin\RestaurantUI\RestaurantUI\RestaurantUI\obj\Debug\netstandard2.0\RestaurantUI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bruker\Desktop\xamarin\RestaurantUI\RestaurantUI\RestaurantUI\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Bruker\Desktop\xamarin\RestaurantUI\RestaurantUI\RestaurantUI\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Bruker\Desktop\xamarin\RestaurantUI\RestaurantUI\RestaurantUI\obj\Debug\netstandard2.0\RestaurantUI.AssemblyInfoInputs.cache
+C:\Users\Bruker\Desktop\xamarin\RestaurantUI\RestaurantUI\RestaurantUI\obj\Debug\netstandard2.0\RestaurantUI.AssemblyInfo.cs
+C:\Users\Bruker\Desktop\xamarin\RestaurantUI\RestaurantUI\RestaurantUI\obj\Debug\netstandard2.0\RestaurantUI.csproj.CoreCompileInputs.cache
+C:\Users\Bruker\Desktop\xamarin\RestaurantUI\RestaurantUI\RestaurantUI\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Bruker\Desktop\xamarin\RestaurantUI\RestaurantUI\RestaurantUI\obj\Debug\netstandard2.0\RestaurantUI.dll
+C:\Users\Bruker\Desktop\xamarin\RestaurantUI\RestaurantUI\RestaurantUI\obj\Debug\netstandard2.0\ref\RestaurantUI.dll
+C:\Users\Bruker\Desktop\xamarin\RestaurantUI\RestaurantUI\RestaurantUI\obj\Debug\netstandard2.0\RestaurantUI.pdb

@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModel="clr-namespace:RestaurantUI.ViewModel;assembly=RestaurantUI"
+             x:Class="RestaurantUI.MainPage"
+             NavigationPage.HasNavigationBar="False">
+
+    <ContentPage.BindingContext>
+        <viewModel:MainViewModel x:Name="vm" />
+    </ContentPage.BindingContext>
+
+    <Grid RowDefinitions="*, 2*, Auto">
+        <BoxView Grid.RowSpan="3">
+            <BoxView.Background>
+                <LinearGradientBrush>
+                    <GradientStopCollection>
+                        <GradientStop Color="#161616" Offset="0" />
+                        <GradientStop Color="#30343f" Offset="1" />
+                    </GradientStopCollection>
+                </LinearGradientBrush>
+            </BoxView.Background>
+        </BoxView>
+        <Grid>
+            <Path
+                Data="M554.25,322.49c83.54,0,150.38,12.55,260.3,64s241,42.68,241,42.68V207H52.5V429.19s131,8.78,241-42.68,176.76-64,260.3-64Z"
+                Aspect="Fill" Fill="#ffbe00" />
+            <Image Source="menu.jpg" WidthRequest="25" HorizontalOptions="Start" VerticalOptions="Start" Margin="25" />
+            <Image Source="search.png" WidthRequest="25" HorizontalOptions="End" VerticalOptions="Start" Margin="25" />
+        </Grid>
+        <StackLayout Grid.Row="1" HorizontalOptions="Center" Margin="0,-160,0,0" Spacing="30">
+            <Grid WidthRequest="210" HeightRequest="210" HorizontalOptions="Center">
+                <Ellipse Stroke="White" StrokeThickness="2" Aspect="Fill" />
+                <Frame Padding="0"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="Center"
+                       CornerRadius="100"
+                       IsClippedToBounds="True"
+                       HeightRequest="195"
+                       WidthRequest="195">
+                    <Image x:Name="BannerImg" Source="lunch.jpg" WidthRequest="195" HeightRequest="195"
+                           HorizontalOptions="Center" />
+                </Frame>
+            </Grid>
+            <StackLayout HorizontalOptions="Center" Spacing="15">
+                <Label Text="Are you hungry?" TextColor="White" FontSize="18" HorizontalOptions="Center" />
+                <Label Text="Don't Wait!" TextColor="White" FontSize="45" FontAttributes="Bold"
+                       HorizontalOptions="Center" />
+                <Button Text="Order Now" TextColor="White" BackgroundColor="#ffbe00" WidthRequest="150"
+                        HeightRequest="46"
+                        CornerRadius="23" HorizontalOptions="Center" Command="{Binding OrderCommand}" />
+            </StackLayout>
+        </StackLayout>
+        <StackLayout Grid.Row="2" Margin="25,0,0,25" Spacing="10">
+            <Label Text="QUICK PICK" TextColor="White" Opacity="0.5" FontSize="14" />
+            <ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never">
+                <StackLayout Orientation="Horizontal" BindableLayout.ItemsSource="{Binding Picks}" Spacing="30">
+                    <BindableLayout.ItemTemplate>
+                        <DataTemplate>
+                            <Grid ColumnDefinitions="Auto, Auto" ColumnSpacing="15">
+                                <Rectangle Fill="#a5a5a5" VerticalOptions="Center" WidthRequest="87" HeightRequest="40" />
+                                <Frame Padding="0"
+                                       HorizontalOptions="CenterAndExpand"
+                                       VerticalOptions="CenterAndExpand"
+                                       CornerRadius="100"
+                                       IsClippedToBounds="True"
+                                       HeightRequest="75"
+                                       WidthRequest="75">
+                                    <Image Source="{Binding Image}" Aspect="Fill" WidthRequest="75" HeightRequest="75" 
+                                       HorizontalOptions="Center" VerticalOptions="Center"/>
+                                </Frame>
+                                <StackLayout Grid.Column="1" Spacing="5" WidthRequest="115">
+                                    <Label Text="{Binding Title}" TextColor="White" FontSize="12" FontAttributes="Bold"/>
+                                    <Label Text="{Binding Description}" TextColor="White" FontSize="10"/>
+                                </StackLayout>
+                            </Grid>
+                        </DataTemplate>
+                    </BindableLayout.ItemTemplate>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </Grid>
+</ContentPage>
